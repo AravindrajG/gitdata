@@ -30,6 +30,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo yum -y update
-            cd home
+            sudo mkdir /webdata
             sudo mv * /webdata
